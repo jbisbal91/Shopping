@@ -1,0 +1,38 @@
+<div class="container-buy-product-card">
+    <div class="col-1"> 
+        <img class="img" src="{{_imageUrl}}">
+    </div>    
+    <div class="col-2">
+        <p class="description">
+            {{_description}}
+          </p>                 
+            <ul class="list">
+                <li *ngIf="product.Marca!== ''">Marca: {{product.Marca}}</li>
+                <li *ngIf="product.Series!== ''">Series: {{product.Series}}</li>
+                <li *ngIf="product.DisplaySize!== ''">Tamaño de pantalla: {{product.DisplaySize}}</li>
+                <li *ngIf="product.Color!== ''">Color: {{product.Color}}</li>
+                <li *ngIf="product.ModelCPU!== ''">Modelo de CPU: {{product.ModelCPU}}</li>
+                <li *ngIf="product.MemoryRamSize!== ''">Tamaño de la memoria RAM instalada: {{product.MemoryRamSize}}</li>
+                <li *ngIf="product.HDDSize!== ''">Descripción del disco duro: {{product.HDDSize}}</li>
+                <li *ngIf="product.OperatingSystem!== ''">Sistema operativo: {{product.OperatingSystem}}</li>
+              </ul>
+    </div>  
+  <div class="col-3">
+    <div class="price">US${{_price}}</div>
+    </div>
+</div>
+
+
+
+    <button mat-raised-button class="add-cart" (click)="addToCart()">
+        <a class="add-cart-label">
+            Agregar al Carrito
+        </a>
+    </button> 
+
+    <button mat-raised-button class="cancelar-btn" (click)="cancelDetail()">
+        <a class="cancelar-label">
+            Cancelar
+        </a>
+    </button>
+

@@ -1,0 +1,67 @@
+.example-card {
+    max-width: 300px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+
+  .img{
+    margin-top: 5px;
+    height: 230px;
+    width: 332px;
+  }
+
+  .icon-shopping_cart {
+    color: #FFD814;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: 10px;
+    font-size: 30px;
+  }
+
+  .add-cart {
+    background: #FFD814;
+    cursor: pointer;
+    border-radius: 12px;
+    height: 34px;
+    margin-top: -7px;
+    bottom: 10px;
+  }
+
+  .add-cart-label {
+    font-weight: bolder;
+  }
+
+  .price{
+    font-weight: bolder;
+    font-size: 20px;
+    margin-top: -10px;
+  }
+
+  .description {
+    color: #007185;
+    font-weight: 500;
+  }
+  
+  .description:hover {
+    color: #C45500;
+    cursor: pointer;
+  }
+  .rating {
+    justify-content: flex-start;
+    margin-top: -20px;
+  }
+
+  .rating-btn {
+    margin-left: -15px;
+    color: #FFA41C;
+  }
+
+  .rating-value {
+    color: #007185;
+    font-weight: 500;
+    margin-top: 24px;
+    margin-left: -5px;
+  }

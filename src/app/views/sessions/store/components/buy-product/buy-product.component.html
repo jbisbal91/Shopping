@@ -1,0 +1,30 @@
+<div class="container product">  
+        <div class="details">
+            <mat-icon class="check-circle-icon">check_circle</mat-icon>            
+            <span class="order">Tu pedido es con envío <strong>GRATIS</strong></span>
+        </div>
+        <div class="subTotal">
+            <span>Subtotal ({{quantityAddToCart()}} productos): <strong>US${{totalPrice()}}</strong></span>
+        </div>
+        <mat-checkbox class="gift">Este pedido es un regalo </mat-checkbox>
+        <div class="proceed-to-payment">
+            <button mat-raised-button class="proceed-to-payment-btn">
+                <a class="proceed-to-payment-label">
+                    Proceder al pago
+                </a>
+            </button>
+        </div>
+</div>
+<div class="container product-card-content">
+    <buy-product-header></buy-product-header>
+    <div *ngFor="let product of products">
+        <buy-product-card *ngIf="products.length > 0" [product]="product" (selectionChange)="selectionChange($event)"></buy-product-card>     
+    </div>
+    <div class="buy-product-card-Empty" *ngIf="products.length === 0">
+        <mat-icon class="order-empty-icon">production_quantity_limits</mat-icon>
+        <span class="order-empty">No hay productos en el carrito</span>
+        
+    </div>
+
+    <buy-product-footer></buy-product-footer>
+</div>

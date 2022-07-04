@@ -1,0 +1,39 @@
+<div class="multi-select">
+    <mat-form-field class="full-width" appearance="outline" id="multiSelect">
+      <button *ngFor="let select of showSelectedData" class="button-filter" mat-stroked-button>
+        {{select.item }}
+        <mat-icon class="close-icon-suffix pointer" matSuffix (click)="removeSelected(select)">close</mat-icon>
+      </button>
+      <button *ngIf="selectedDataOverflow.length!==0" class="button-filter" mat-stroked-button>
+        + {{selectedDataOverflow.length}} ...
+      </button>
+      <input class="search-input" matInput type="text" [placeholder]="_placeholder" [matAutocomplete]="auto"
+        [formControl]="selectControl">
+      <div *ngIf="selectData.length === 0 || !_allowClear" class="keyboard_arrow pointer">
+        <mat-icon matSuffix>{{keyboard_arrow}}</mat-icon>
+      </div>
+      <div *ngIf="selectData.length > 0 && _allowClear" class="cancel pointer">
+        <mat-icon (click)="cleanSelected()" matSuffix>cancel</mat-icon>
+      </div>
+    </mat-form-field>
+    <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn" (opened)="opened()" (closed)="closed()">
+      <mat-option *ngIf="data.length > 0">
+        <div (click)="clicked($event)">
+          <mat-checkbox color="primary" [checked]="isAllSelected()"
+            [indeterminate]="!isAllSelected() && hasSelected() > 0" (change)="selectAll($event.checked)"
+            (click)="$event.stopPropagation()">
+            Select All
+          </mat-checkbox>
+        </div>
+      </mat-option>
+      <mat-divider class="separator"></mat-divider>
+      <mat-option *ngFor="let data of filteredData | async">
+        <div (click)="optionClicked($event, data)">
+          <mat-checkbox [checked]="data.selected" color="primary" (change)="toggleSelection(data)"
+            (click)="$event.stopPropagation()">
+            {{ data.item }}
+          </mat-checkbox>
+        </div>
+      </mat-option>
+    </mat-autocomplete>
+  </div>

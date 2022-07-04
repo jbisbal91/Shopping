@@ -1,0 +1,79 @@
+.product-card-content {
+    margin-top:40px;
+}
+
+.product {
+    background-color: #FFFFFF;
+    height: 270px;
+    width: 20%;
+    float: right;
+    margin-top: 40px;
+    box-shadow: 0px 2px 1px -1px #181818;
+    box-shadow: 0px 1px 1px 0px #181818;
+    box-shadow: 0px 1px 3px 0px #181818;
+}
+
+.buy-product-card-Empty {
+  display : flex;
+  flex-direction : row;
+  background-color:#FFFFFF;
+  height: 30px;
+  width:80%;
+  box-shadow: 0px 2px 1px -1px #181818;
+  box-shadow:0px 1px 1px 0px #181818;
+  box-shadow:0px 1px 3px 0px #181818;
+}
+
+.subTotal{
+    float: right;
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.order {
+    float: right;
+    position: absolute;
+    font-weight: 500;
+}
+
+.order-empty{
+  margin-left: 30px;
+  float: right;
+  position: absolute;
+  font-weight: 500;
+}
+
+.order-empty-icon{
+  color: red;
+}
+
+.details{
+    margin-top:10px;
+}
+
+.check-circle-icon {
+   color: #087F64;
+}
+
+.proceed-to-payment {
+  margin-top:20px;
+  }
+
+.proceed-to-payment-btn {
+    background: #FFD814;
+    cursor: pointer;
+    border-radius: 12px;
+    height: 34px;
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .proceed-to-payment-label {
+    font-weight: bolder;
+  }
+
+  .gift {
+    font-weight: 500;
+  }

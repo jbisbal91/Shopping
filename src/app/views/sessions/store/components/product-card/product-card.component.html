@@ -1,0 +1,26 @@
+<mat-card class="example-card">  
+    <img class="img" mat-card-image src="{{_imageUrl}}">
+    <mat-card-content>
+      <p class="description" (click)="openDetailsProduct()">
+        {{_description}}
+      </p>
+    <div class="rating">
+    <button  class="rating-btn" mat-icon-button [color]="color" *ngFor="let ratingId of ratingArr;index as i" [id]="'star_'+i">
+        <mat-icon>
+          {{showIcon(i)}}
+        </mat-icon>
+      </button>
+      <p class="rating-value">
+       {{_rating}}
+      </p>
+    </div>
+      <div class="price">US${{_price}}</div>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-raised-button class="add-cart" (click)="addToCart()">
+            <a class="add-cart-label">
+                Agregar al Carrito
+            </a>
+        </button>  
+    </mat-card-actions>
+  </mat-card>

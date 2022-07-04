@@ -1,0 +1,35 @@
+.grid-container-c1 {
+    display: grid;
+    grid-template-columns: 350px;
+    justify-content: center;
+    grid-gap: 30px;
+  }
+
+
+  .grid-container-c2 {
+    display: grid;
+    grid-template-columns: 350px 350px;
+    justify-content: center;
+    grid-gap: 30px;
+  }
+
+
+  .grid-container-c3 {
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    justify-content: center;
+    grid-gap: 30px;
+  }
+
+  .grid-container-c4 {
+    display: grid;
+    grid-template-columns: 350px 350px 350px 350px;
+    justify-content: center;
+    grid-gap: 30px;
+  }
+
+  .multi-selec {
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 20px;
+}

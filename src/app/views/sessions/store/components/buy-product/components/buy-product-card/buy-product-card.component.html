@@ -1,0 +1,17 @@
+<div class="container-buy-product-card">
+    <div class="col-1"> 
+        <img class="img" src="{{_imageUrl}}">
+    </div>    
+    <div class="col-2">
+        <p class="description">
+            {{_description}}
+          </p>
+          <div>        
+            <span class="eliminar">Cantidad: {{_quantity}}</span>      
+            <span class="eliminar" (click)="deleteProduct()"> | Eliminar</span>            
+          </div>
+    </div>  
+  <div class="col-3">
+    <div class="price">US${{_price}}</div>
+    </div>
+</div>

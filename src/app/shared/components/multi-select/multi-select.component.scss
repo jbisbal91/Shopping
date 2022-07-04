@@ -1,0 +1,123 @@
+.full-width {
+  width: 100%;
+}
+
+.keyboard_arrow {
+  float: right;
+  color: #757575;
+  position: relative;
+}
+.close-icon-suffix {
+  font-size: 15px;
+  margin-top: 6px;
+  margin-right: -17px;
+}
+
+.keyboard_arrow:hover {
+  cursor: pointer !important;
+}
+
+.cancel {
+  float: right;
+  color: #757575;
+  position: relative;
+}
+
+.cancel:hover {
+  cursor: pointer !important;
+}
+
+.button-filter {
+  top: 0px;
+  bottom: 0px;
+  margin-right: 4px;
+  height: 27px;
+  background-color: #EDEDED;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: default;
+}
+
+.button-filter:hover {
+  background-color: #EDEDED !important;
+}
+
+.pointer {
+  cursor: pointer !important;
+}
+
+.search-input {
+  position: absolute;
+  margin-top: 5px;
+}
+
+.select-all {
+  height: 30px;
+  margin-left: 16px;
+  margin-top: 9px;
+}
+
+::ng-deep .select-all-checkbox .mat-checkbox-layout .mat-checkbox-label {
+  line-height: 24px !important;
+  min-width: 112px !important;
+  ;
+  max-width: 280px !important;
+  ;
+}
+
+::ng-deep .multi-select .mat-button-wrapper {
+  bottom: 4px;
+  position: relative;
+}
+
+::ng-deep .mat-select-panel::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+::ng-deep .mat-select-panel::-webkit-scrollbar:vertical {
+  width: 10px;
+}
+
+::ng-deep .mat-select-panel::-webkit-scrollbar-button:increment,
+.mat-select-panel::-webkit-scrollbar-button {
+  display: none;
+}
+
+::ng-deep .mat-select-panel::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+::ng-deep .mat-select-panel::-webkit-scrollbar-thumb {
+  background-color: #C1C1C1;
+  border-radius: 20px;
+  border: 2px solid #f1f2f3;
+}
+
+::ng-deep .mat-select-panel::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::ng-deep .multi-select .mat-form-field-infix {
+  height: 30px;
+  top: -10px;
+}
+
+::ng-deep .multi-select .mat-select-arrow {
+  top: -14px !important;
+  padding-top: 16px !important;
+}
+
+::ng-deep .multi-select .mat-form-field-appearance-outline .mat-select-arrow-wrapper {
+  transform: none !important;
+  padding-top: 12px !important;
+}
+
+::ng-deep .multi-select .mat-form-field-label-wrapper {
+  top: -14px !important;
+  padding-top: 16px !important;
+}
+
+::ng-deep .multi-select .mat-form-field-appearance-outline .mat-form-field-infix {
+  padding: 0em 0em 0em 0em;
+  margin-top: 12px;
+}

@@ -1,0 +1,21 @@
+<div class="multi-selec">
+  <multi-select
+    placeholder="Seleccione un producto"
+    [data]="data"
+    (selectionChange)="selectionChange($event)">
+  </multi-select>
+</div>
+<div [ngClass]="gridList" *ngIf="products !== undefined">
+  <div *ngFor="let product of products">
+      <product-card [product]="product" ></product-card>
+  </div>
+</div>
+      
+
+
+
+
+            
+           
+
+
