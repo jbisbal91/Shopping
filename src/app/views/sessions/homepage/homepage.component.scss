@@ -1,0 +1,189 @@
+.homepage-container{
+    overflow-x: auto !important;
+    overflow-y: auto !important;
+}
+
+.header-wrap {
+    background: url('assets/images/backgrounds/homepage.png');
+    width: 100%;
+    height: 870px;
+  }
+
+  .contact-btn{
+    float: right;
+    margin-right: 164px;
+    color: #FFFFFF;
+    background-color: #243452;
+    width: 108px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .login-btn{
+    float: right;
+    margin-right: 20px;
+    color: #243452;
+    background-color: #F5F5F5;
+    width: 108px;
+    height: 50px;
+    cursor: pointer;
+    border-radius:4px;
+  }
+
+  .menu-item {
+    margin-top: 32px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #243452;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+  }
+
+  .logo {
+    width: 150px;
+    margin-left: 100px;
+    padding-top: 20px;
+    cursor: pointer;
+  }
+
+  .promise-founded {
+    width: 541px;
+  }
+
+  .promise-founded-label {
+    margin-left: 100px;
+    color: #243452;
+    font-family: Lora;
+    font-weight: 600;
+    margin-top: 60px;
+    line-height:1;
+  }
+
+  .kdm {
+    margin-top: -30px;
+    width: 541px;
+  }
+
+  .kdm-label {
+    margin-left: 100px;
+    color: #243452;
+    font-family: Lora;
+    font-weight: 600;
+    margin-top: 60px;
+}
+
+.call-us-btn {
+    float: left;
+    margin-left: 100px;
+    color: #FFFFFF;
+    background-color: #243452;
+    width: 135px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 4px;  
+}
+
+.register-investor {
+    float: left;
+    margin-left: 20px;
+    color: #243452;
+    width: 270px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid #243452;
+}
+
+.register-investor-label{
+    margin-top: 12px;
+    margin-left: 10px;
+    color: #243452;
+    font-weight: 600;
+}
+
+
+.body-p1 {
+    background-color: #EDEFF2;
+    width: 100%;
+    height: 448px;
+}
+
+.body-p2 {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 1074px;  
+}
+
+.body-p3 {
+    background-color: #EDEFF2;
+    width: 100%;
+    height: 759px;  
+}
+
+.body-p4 {
+    background: url('assets/images/backgrounds/msns.png');
+    width: 100%;
+    height: 435px;
+  }
+
+  .msns{
+    width: 671px;
+    height: 88px;
+  }
+
+  .msns-label {
+    margin-left: 100px;
+    color: #243452;
+    font-family: Lora;
+    font-weight: 600;
+    padding-top: 60px;
+    line-height: 1;
+  }
+
+
+  .msns-description {
+    width: 658px;
+    height: 100px;
+  }
+
+  .msns-description-label {
+    margin-left: 100px;
+    color: #243452;
+    font-family: Lora;
+    font-weight: 600;
+    padding-top: 60px;
+    line-height: 1;
+  }
+
+  .msns-call-us-btn {
+    margin-top: 100px;
+    float: left;
+    margin-left: 100px;
+    color: #FFFFFF;
+    background-color: #243452;
+    width: 135px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 4px;  
+}
+
+.msns-register-investor {
+    margin-top: 100px;
+    float: left;
+    margin-left: 20px;
+    color: #243452;
+    width: 270px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid #243452;
+}
+
+.msns-register-investor-label{
+    margin-top: 12px;
+    margin-left: 10px;
+    color: #243452;
+    font-weight: 600;
+}

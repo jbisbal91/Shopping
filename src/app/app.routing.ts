@@ -6,8 +6,21 @@ import { AuthGuard } from "./shared/guards/auth.guard";
 export const rootRouterConfig: Routes = [
   {
     path: "",
-    redirectTo: "/dashboard/analytics",
+    redirectTo: "/home/homepage",
     pathMatch: "full",
+  },
+  {
+    path: "",
+    children: [
+      {
+        path: "home",
+        loadChildren: () =>
+          import("./views/sessions/homepage/Homepage.module").then(
+            (m) => m.HomepageModule
+          ),
+        data: { title: "Homepage" },
+      },
+    ],
   },
   {
     path: "",
