@@ -1,21 +1,23 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { MatButton } from '@angular/material/button';
-import { MatProgressBar } from '@angular/material/progress-bar';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { matxAnimations } from 'app/shared/animations/matx-animations';
 @Component({
   selector: 'app-forgot-password',
   templateUrl: './forgot-password.component.html',
-  styleUrls: ['./forgot-password.component.css']
+  styleUrls: ['./forgot-password.component.scss'],
+  animations: matxAnimations
 })
 export class ForgotPasswordComponent implements OnInit {
-  userEmail;
-  @ViewChild(MatProgressBar) progressBar: MatProgressBar;
-  @ViewChild(MatButton) submitButton: MatButton;
+  forgotForm: FormGroup;
+ 
   constructor() { }
 
   ngOnInit() {
+    this.forgotForm = new FormGroup({
+      userEmail: new FormControl('', Validators.required)
+    });
   }
   submitEmail() {
-    this.submitButton.disabled = true;
-    this.progressBar.mode = 'indeterminate';
+  
   }
 }

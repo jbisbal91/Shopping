@@ -1,93 +1,57 @@
-<div
-  [perfectScrollbar]="{}"
-  class="height-100vh signup4-wrap"
-  fxLayout="row wrap"
-  fxLayoutAlign="center center"
->
-  <div
-    class="signup4-container mat-elevation-z4 white"
-    fxLayout="row wrap"
-    fxLayout.xs="column"
-    fxLayoutAlign="start stretch"
-    fxFlex="60"
-    fxFlex.xs="94"
-    fxFlex.sm="80"
-    [@animate]="{
+<div [perfectScrollbar]="{}" class="height-100vh signin-wrap" fxLayout="row wrap" fxLayoutAlign="center center">
+  <div class="signup4-container mat-elevation-z4 white" style="width: 470px; height: 657px;" fxLayout="row wrap"
+    fxLayout.xs="column" fxLayoutAlign="start stretch" fxFlex.xs="94" fxFlex.sm="80" [@animate]="{
       value: '*',
       params: { y: '40px', opacity: '0', delay: '100ms', duration: '400ms' }
-    }"
-  >
-    <!-- Left Side content -->
-    <div
-      fxLayout="column"
-      fxLayoutAlign="center center"
-      class="signup4-header"
-      fxFlex="40"
-    >
-      <div class="" fxLayout="row wrap" fxLayoutAlign="center center">
-        <img
-          width="200px"
-          src="assets/images/illustrations/lighthouse.svg"
-          alt=""
-        />
-      </div>
-    </div>
-
+    }">
     <!-- Right side content -->
-    <div fxFlex="60" fxLayout="row wrap" fxLayoutAlign="center center">
-      <form
-        [formGroup]="signinForm"
-        class="signup4-form grey-100"
-        (ngSubmit)="signin()"
-      >
-        <mat-form-field class="full-width" appearance="outline">
-          <mat-label>Email</mat-label>
-          <input
-            matInput
-            formControlName="username"
-            type="text"
-            name="username"
-            placeholder="Username"
-          />
-        </mat-form-field>
+    <div fxLayout="row wrap" fxLayoutAlign="center">
+      <div class="logo">
+        <img class="logo-img signin-form" src="assets/images/logos/KorthLogo.png" alt="">
+      </div>
+      
+      <div class="signin">
+        <h4 class="signin-label">Sign in</h4>
+      </div>
 
-        <mat-form-field class="full-width" appearance="outline">
-          <mat-label>Password</mat-label>
-          <input
-            matInput
-            formControlName="password"
-            type="password"
-            name="password"
-            placeholder="********"
-          />
-        </mat-form-field>
+      <div class="form">
+        <form [formGroup]="signinForm" class="signin-form" (ngSubmit)="signin()">
 
-        <mat-checkbox formControlName="rememberMe"
-          >Remember this computer</mat-checkbox
-        >
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Username or Email</mat-label>
+            <input matInput formControlName="username" type="text" name="username" placeholder="Username" />
+          </mat-form-field>
 
-        <div
-          fxLayout="row wrap"
-          fxLayoutAlign="start center"
-          style="margin-top: 20px;"
-        >
-          <button-loading [loading]="loading" loadingText="Signing in..." class="mr-16" color="primary">Sign in</button-loading
-          >
-          <span class="px-16">or</span>
-          <a
-            class="font-weight-bold mat-color-primary"
-            routerLink="/sessions/signup"
-            >Sign Up</a
-          >
-        </div>
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Password *</mat-label>
+            <input matInput formControlName="password" type="password" name="password" placeholder="********" />
+            <mat-icon matSuffix>visibility</mat-icon>
+          </mat-form-field>
+          <mat-checkbox formControlName="rememberMe" color="primary">Remember me</mat-checkbox>
 
-        <!-- <div fxLayout="row wrap" fxLayoutAlign="space-between center" style="margin-top: 20px">
+          <div fxLayout="row wrap" fxLayoutAlign="start center" style="margin-top: 20px;">  
+            <button mat-button class="signin-btn">SIGN IN</button>
+
+            <div class="flex flex-col sm:flex-row sm:gap-4" style="margin-top: 20px;"> 
+              <span style="float: left;" class="forgot-password" routerLink="/sessions/forgot-password">Forgot password?</span>
+              <span style="float: right; margin-left: 78px;" class="register" routerLink="/sessions/signup">Not a member? <br> <a style="font-size: 20px !important;">Regíster</a></span>
+            </div> 
+           <div class="copyright">
+            <span> Copyright ® 2022 Korth Direct Mortgage Inc. (NMLS ID 1579547) . All Rights Reserved -  Privacy Policy - Code of Ethics </span>
+           </div>
+
+          </div>
+
+          <!-- <div fxLayout="row wrap" fxLayoutAlign="space-between center" style="margin-top: 20px">
           <span>or connect with </span>
           <div>
             icons goes here
           </div>
         </div> -->
-      </form>
+        </form>
+      </div>
+
+
     </div>
   </div>
 </div>

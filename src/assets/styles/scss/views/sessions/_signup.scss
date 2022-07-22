@@ -1,6 +1,21 @@
-.signup4-wrap {
-  background: url('assets/images/backgrounds/waterfall.jpg');
+.signin-wrap {
+  background: url('assets/images/backgrounds/waterfall.png');
+  height: 929px;
+  overflow-y: auto !important;
 }
+
+.signup-wrap {
+    background: url('assets/images/backgrounds/waterfall.png');
+    height: 1068px;
+    overflow-y: auto !important;
+  }
+
+  .forgot-wrap {
+    background: url('assets/images/backgrounds/waterfall.png');
+    height: 929px;
+    overflow-y: auto !important;
+  }
+
 .signup4-container {
     border-radius: 12px;
     position: relative;
@@ -31,8 +46,19 @@
 .signup4-small-image {
     height: 24px;
 }
-.signup4-form {
-    padding: 35px;
+.signin-form {
+    padding-left: 78px;
+    padding-right: 78px;
+}
+
+.signup-form {
+    padding-left: 118px;
+    padding-right: 118px;
+}
+
+.forgot-form {
+    padding-left: 90px;
+    padding-right: 90px;
 }
 
 .signup4-button {
