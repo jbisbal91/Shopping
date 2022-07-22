@@ -74,6 +74,92 @@
     margin-top: 60px;
 }
 
+.korth-direct-mortgage-description{
+    width:100%;
+    height: 448px;
+}
+
+.korth-direct-mortgage-description-label{
+    color: #243452;
+    font-family: Lato;
+    font-weight: 300;
+    padding-top: 60px;
+    line-height: 1;
+    font-size: 24px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.title {
+    width:100%;
+    height: 64px;  
+}
+
+.title-label{
+    margin-left: 100px;
+    color: #243452;
+    font-family: Lora;
+    font-weight: 600;
+    padding-top: 60px;
+    line-height: 1;
+}
+
+.insights-item {
+    margin-top: 80px !important;
+    display: flex;
+    justify-content: center;
+}
+
+.group-left {
+    width: 160px;
+    padding-top: 20px;
+  }
+
+  .group-right {
+    float: left;
+    margin-left: 50px;
+    width: 70%;
+  }
+
+  .group-right-title{
+    color: #243452;
+    font-family: Lora;
+    font-weight: 600;
+    line-height: 1;
+  }
+ .group-right-subtitle{
+    color: #243452;
+    font-family: Lato;
+    font-weight: 400;
+    line-height: 1;
+    font-size: 16px;
+  }
+
+  .group-2-left {
+    float: left;
+    color: #243452;
+    font-family: Lora;
+    font-weight: 600;
+    line-height: 1;
+    width: 70%;
+  }
+
+  .group-2-right {
+    float: left;
+    margin-left: 50px;
+    
+  }
+
+.group-2-left-subtitle {
+    color: #243452;
+    font-family: Lato;
+    font-weight: 400;
+    line-height: 1;
+    font-size: 16px; 
+}
+
+
+
 .call-us-btn {
     float: left;
     margin-left: 100px;
@@ -186,4 +272,10 @@
     margin-left: 10px;
     color: #243452;
     font-weight: 600;
+}
+
+.footer {
+    background-color:#243452;
+    width: 100%;
+    height: 372px;
 }
